@@ -27,6 +27,7 @@ body {
     border: 13px rgb(132, 20, 20) double;
     box-shadow: 8px 12px 9px 10px rgba(104, 86, 67, 0.729);
 }
+
 .wrapper {
   margin: 0 0 30px;
   position: relative;
@@ -42,7 +43,7 @@ body {
 .wheel {
 height: 585px;
 width: 585px;
-border: 23px solid #b31e1ed4;
+border: 23px solid #8d2c1bf9;
 position: relative;
 padding: 0;
 margin: 3em 0px 0px 24em;
@@ -51,6 +52,12 @@ list-style: none;
 overflow: hidden;
 }
 
+@keyframes blink { 
+   50% { border-color: #111010; } 
+}
+.wheel { /*or other element you want*/
+    animation: blink .5s step-end infinite alternate;
+}
 
 li {
 	overflow: hidden;
@@ -240,6 +247,13 @@ li:nth-child(12) .value {
     margin-top: 50px;
     border-radius: 15px;
     border: 9px double #ccaa78;
+}
+
+@keyframes blink { 
+   50% { border-color: #151313; } 
+}
+#credit-box { /*or other element you want*/
+    animation: blink .5s step-end infinite alternate;
 }
 
 input {
