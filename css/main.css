@@ -21,23 +21,11 @@ body {
     display:inline-block; 
     width: 80;
     height: 70%; 
-     padding: 40px;
+     padding: 20px;
     margin-left: 300px;
     border-radius: 15px;
     border: 13px rgb(132, 20, 20) double;
     box-shadow: 8px 12px 9px 10px rgba(104, 86, 67, 0.729);
-}
-
-.wrapper {
-  margin: 0 0 30px;
-  position: relative;
-}
-
-.pointer-wrapper {
-  position: absolute;
-  top: 15px;
-  left:67%;
-  z-index: 1;
 }
 
 .wheel {
@@ -46,7 +34,7 @@ width: 585px;
 border: 23px solid #8d2c1bf9;
 position: relative;
 padding: 0;
-margin: 3em 0px 0px 24em;
+margin: 4em 0px 0px 24em;
 border-radius: 50%;
 list-style: none;
 overflow: hidden;
@@ -55,10 +43,17 @@ overflow: hidden;
 @keyframes blink { 
    50% { border-color: #111010; } 
 }
-.wheel { /*or other element you want*/
+.wheel {
     animation: blink .5s step-end infinite alternate;
 }
-
+.arrow {
+    width: 172px;
+    height: 150px;
+    margin: -40px 40px -60px 20px;
+    position: relative;
+    top: 30px;
+    right: -590px;
+}
 li {
 	overflow: hidden;
 	position: absolute;
@@ -76,7 +71,7 @@ span {
     display: inline-block;
 }
 
-.value {
+#value {
 	position: absolute;
 	left: -100%;
 	width: 200%; height: 200%;
@@ -148,41 +143,41 @@ li:nth-child(12) {
     -ms-transform: rotate(330deg) skewY(-60deg);
 	transform: rotate(330deg) skewY(-60deg);    
 }
-li:first-child .value {
+li:first-child #value {
     background: rgb(3, 200, 16); 
      
 }
-li:nth-child(2) .value {
+li:nth-child(2) #value {
 	background: rgb(12, 124, 210); 
 }
-li:nth-child(3) .value {
+li:nth-child(3) #value {
 	background: rgb(148, 1, 164); 
 }
-li:nth-child(4) .value {
+li:nth-child(4) #value {
 	background: rgb(249, 249, 3);  
 }
-li:nth-child(5) .value {
+li:nth-child(5) #value {
 	background: rgb(237, 21, 9);  
 }
-li:nth-child(6) .value {
+li:nth-child(6) #value {
 	background: rgb(254, 123, 42);  
 }
-li:nth-child(7) .value{
+li:nth-child(7) #value{
 	background: rgb(132, 240, 237);  
 }
-li:nth-child(8) .value {
+li:nth-child(8) #value {
 	background: rgb(227, 79, 180);  
 }
-li:nth-child(9) .value {
+li:nth-child(9) #value {
 	background:  rgb(3, 200, 16);  
 }
-li:nth-child(10) .value {
+li:nth-child(10) #value {
 	background:  rgb(12, 124, 210); 
 }
-li:nth-child(11) .value {
+li:nth-child(11) #value {
 	background: rgb(148, 1, 164); 
 }
-li:nth-child(12) .value {
+li:nth-child(12) #value {
 	background: rgb(249, 249, 3); 
 }
 
@@ -198,7 +193,7 @@ li:nth-child(12) .value {
   background: rgb(10, 10, 10);
 }
 
-.spin {
+#spin {
   position: absolute;
   width: 4em;
   height: 4em;
@@ -214,27 +209,32 @@ li:nth-child(12) .value {
   font-size: 18px;
   cursor: pointer;
 }
-.spin:hover {
-    background: rgb(218, 167, 15);
+#spin:hover {
+    background: rgb(196, 162, 25);
     color: rgb(101, 42, 78);
 }
+#spin:active {
+    width: 70px;
+    height: 70px;
+    font-size: 20px;
 
+}
 .game-menu {
     color: rgb(7, 7, 7);
     background:rgb(44, 44, 42);
     border: rgb(181, 49, 46) 19px inset;
     width: 250px;
-    height: 500px;
+    height: 575px;
     padding: 30px;
     margin:  -600px 0px 70px -10px;
     border-radius: 10%;
 }
 #credit-title {
-    font-family: 'Level';
+    font-family: 'budmo jiggler';
     margin-top: -10px;
     margin-bottom: 20px;
     text-align: center;
-    color: rgb(128, 22, 22);
+    color: rgb(191, 13, 13);
     font-size: 53px;
 }
 
@@ -244,7 +244,7 @@ li:nth-child(12) .value {
     width: 180px;
     padding: 15px;
     margin-left: 15px;
-    margin-top: 50px;
+    margin-top: 30px;
     border-radius: 15px;
     border: 9px double #ccaa78;
 }
@@ -252,14 +252,14 @@ li:nth-child(12) .value {
 @keyframes blink { 
    50% { border-color: #151313; } 
 }
-#credit-box { /*or other element you want*/
+#credit-box {
     animation: blink .5s step-end infinite alternate;
 }
 
 input {
     width: 150px;
     padding: 10px;
-    margin: 30px 0px 5px -19px;
+    margin: -50px 0px 40px -19px;
     border-radius: 15px;
     border: 9px double #ccaa78;
     font-size: 19px;
@@ -269,7 +269,7 @@ input:hover {
     background: black;
     color: white;
 }
-.name-btn {
+#nameBtn {
     color: rgb(148, 9, 9);
     font-size: 20px;
     border-radius: 15px;
@@ -277,24 +277,41 @@ input:hover {
     padding: 5px;
     display:inline;
     float: right;
-    margin-top: -59px;
+    margin-top: -15px;
     margin-right: -10px;
     outline: remove;
 }
 
-.name-btn:hover {
+#nameBtn:hover {
     background: black;
     color: white;
 }
-#player-title {
-    font-family: 'Level';
+#pTitle {
+    font-family: 'budmo jiggler';
     text-align: center;
-    color: rgb(128, 22, 22);
-    font-size: 48px;
+    color: #e8c38d;
+    font-size: 52px;
     font-weight: 900px;
-    margin-top: 90px;
+    margin-top: 45px;
 }
 
 hr {
-    margin-top: 35px;;
+    margin-top: 32px;;
+}
+
+#restart {
+    background: rgb(138, 20, 24);
+    border-radius: 25px;
+    border: rgb(225, 208, 139) 5px inset;
+    padding: 14px;
+    color: rgb(255, 255, 255);
+    margin: 30px 70px 0px 70px;
+    font-family:sans-serif;
+    font-size: 13px;
+}
+
+#restart:hover {
+    background: rgb(79, 76, 76);
+    color: rgb(244, 240, 240);
+    border: 5px solid rgb(230, 193, 99);
 }
