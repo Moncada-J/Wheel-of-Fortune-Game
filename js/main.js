@@ -1,7 +1,9 @@
 // ----------> VARIABLES < --------- 
 // create and assign constant (non changing) variables such as:
 //  number values within wheel & game play audio.
-const spinAudio = new Audio('https://voca.ro/1hPceoBTH0Xk');
+
+0
+const s0pinAudio = new Audio('https://voca.ro/1hPceoBTH0Xk');
 
 // ----------->  GAME STATE  <------------
 // define the variables which are apart of the game state such as:
@@ -38,8 +40,11 @@ document.querySelector('#restart').addEventListener('click', restartGame);
 
 
  function spinWheel( ) {
-        spinAudio.play();
-        wheelEl.style.transform = "rotate (360deg) ";
+        // spinAudio.play();
+       const min = 1024;
+       const max = 9999;
+       const deg = Math.floor(Math.random() * (max - min)) + min;
+        wheelEl.style.transform = "rotate("+deg+"deg) ";
  }
 
 
