@@ -38,14 +38,16 @@ margin: 4em 0px 0px 24em;
 border-radius: 50%;
 list-style: none;
 overflow: hidden;
+ z-index: 1;
+transform: rotate(0deg);
+transition: transform 10s cubic-bezier(.5,.1,.15,1);
+animation: blink .5s step-end infinite alternate;
 }
 
 @keyframes blink { 
    50% { border-color: #111010; } 
 }
-.wheel {
-    animation: blink .5s step-end infinite alternate;
-}
+
 .arrow {
     width: 172px;
     height: 150px;
@@ -71,7 +73,7 @@ span {
     display: inline-block;
 }
 
-#value {
+.value {
 	position: absolute;
 	left: -100%;
 	width: 200%; height: 200%;
@@ -143,41 +145,41 @@ li:nth-child(12) {
     -ms-transform: rotate(330deg) skewY(-60deg);
 	transform: rotate(330deg) skewY(-60deg);    
 }
-li:first-child #value {
+li:first-child .value {
     background: rgb(3, 200, 16); 
      
 }
-li:nth-child(2) #value {
+li:nth-child(2) .value {
 	background: rgb(12, 124, 210); 
 }
-li:nth-child(3) #value {
+li:nth-child(3) .value {
 	background: rgb(148, 1, 164); 
 }
-li:nth-child(4) #value {
+li:nth-child(4) .value {
 	background: rgb(249, 249, 3);  
 }
-li:nth-child(5) #value {
+li:nth-child(5) .value {
 	background: rgb(237, 21, 9);  
 }
-li:nth-child(6) #value {
+li:nth-child(6) .value {
 	background: rgb(254, 123, 42);  
 }
-li:nth-child(7) #value{
+li:nth-child(7) .value{
 	background: rgb(132, 240, 237);  
 }
-li:nth-child(8) #value {
+li:nth-child(8) .value {
 	background: rgb(227, 79, 180);  
 }
-li:nth-child(9) #value {
-	background:  rgb(3, 200, 16);  
+li:nth-child(9) .value {
+	background:  rgb(227, 116, 32);  
 }
-li:nth-child(10) #value {
+li:nth-child(10) .value {
 	background:  rgb(12, 124, 210); 
 }
-li:nth-child(11) #value {
+li:nth-child(11) .value {
 	background: rgb(148, 1, 164); 
 }
-li:nth-child(12) #value {
+li:nth-child(12) .value {
 	background: rgb(249, 249, 3); 
 }
 
@@ -217,35 +219,38 @@ li:nth-child(12) #value {
     width: 70px;
     height: 70px;
     font-size: 20px;
-
 }
+
 .game-menu {
     color: rgb(7, 7, 7);
     background:rgb(44, 44, 42);
     border: rgb(181, 49, 46) 19px inset;
     width: 250px;
-    height: 575px;
+    height: 605px;
     padding: 30px;
     margin:  -600px 0px 70px -10px;
     border-radius: 10%;
 }
-#credit-title {
+#cTitle {
     font-family: 'budmo jiggler';
     margin-top: -10px;
     margin-bottom: 20px;
     text-align: center;
     color: rgb(191, 13, 13);
-    font-size: 53px;
+    font-size: 43px;
 }
 
 #credit-box {
     background-color: rgb(220, 219, 215);
-    font-size: 26px;
+    font-size: 21px;
     width: 180px;
     padding: 15px;
     margin-left: 15px;
     margin-top: 30px;
     border-radius: 15px;
+    text-align: center;
+    color: rgb(6, 145, 6);
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     border: 9px double #ccaa78;
 }
 
@@ -292,7 +297,7 @@ input:hover {
     color: #e8c38d;
     font-size: 52px;
     font-weight: 900px;
-    margin-top: 45px;
+    margin-top: 43px;
 }
 
 hr {
