@@ -1,14 +1,14 @@
 #game-title{
     background: linear-gradient(to right, #a76d28, #FCF6BA, #B38728, #FBF5B7, #C28B3B);
-    color:rgb(165, 29, 27);
-    font-family: 'hanging letters';
-    font-size: 80px;
+    color:rgb(133, 19, 6);
+    font-family: 'three dimensions hollow';
+    font-size: 140px;
     width: 700px;
     padding-top: 20px;
-    margin-left: 510px;
+    margin-left: 980px;
     text-align: center;
     border-radius: 15px;
-    border:rgb(165, 29, 27) 7px double;
+    border:rgb(247, 245, 245) 10px inset;
 }
 
 body {
@@ -19,12 +19,14 @@ body {
 .container {
     background: linear-gradient(to right, #a76d28, #FCF6BA, #B38728, #FBF5B7, #C28B3B);
     display:inline-block; 
-    width: 80;
-    height: 70%; 
-     padding: 20px;
-    margin-left: 300px;
+    max-width: 990px;
+    height: 800px; 
+     padding: 100px;
+    margin-right: 200px;
+    margin-left: 800px;
+    margin-bottom: 40px;
     border-radius: 15px;
-    border: 13px rgb(132, 20, 20) double;
+    border: 13px rgb(254, 251, 251) inset;
     box-shadow: 8px 12px 9px 10px rgba(104, 86, 67, 0.729);
 }
 
@@ -34,7 +36,7 @@ width: 585px;
 border: 23px solid #8d2c1bf9;
 position: relative;
 padding: 0;
-margin: 4em 0px 0px 24em;
+margin: 6em 0px 0px 24em;
 border-radius: 50%;
 list-style: none;
 overflow: hidden;
@@ -48,14 +50,6 @@ animation: blink .5s step-end infinite alternate;
    50% { border-color: #111010; } 
 }
 
-.arrow {
-    width: 172px;
-    height: 150px;
-    margin: -40px 40px -60px 20px;
-    position: relative;
-    top: 30px;
-    right: -590px;
-}
 li {
 	overflow: hidden;
 	position: absolute;
@@ -226,9 +220,9 @@ li:nth-child(12) .value {
     background:rgb(44, 44, 42);
     border: rgb(181, 49, 46) 19px inset;
     width: 250px;
-    height: 605px;
+    height: 675px;
     padding: 30px;
-    margin:  -600px 0px 70px -10px;
+    margin:  -700px 0px 70px -10px;
     border-radius: 10%;
 }
 #cTitle {
@@ -242,14 +236,13 @@ li:nth-child(12) .value {
 
 #credit-box {
     background-color: rgb(220, 219, 215);
-    font-size: 21px;
+    font-size: 28px;
     width: 180px;
     padding: 15px;
     margin-left: 15px;
-    margin-top: 30px;
     border-radius: 15px;
     text-align: center;
-    color: rgb(6, 145, 6);
+    color: rgb(69, 72, 69);
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     border: 9px double #ccaa78;
 }
@@ -264,7 +257,7 @@ li:nth-child(12) .value {
 input {
     width: 150px;
     padding: 10px;
-    margin: -50px 0px 40px -19px;
+    margin: 20px 0px 0px -19px;
     border-radius: 15px;
     border: 9px double #ccaa78;
     font-size: 19px;
@@ -282,7 +275,7 @@ input:hover {
     padding: 5px;
     display:inline;
     float: right;
-    margin-top: -15px;
+    margin-top:22px;
     margin-right: -10px;
     outline: remove;
 }
@@ -297,11 +290,10 @@ input:hover {
     color: #e8c38d;
     font-size: 52px;
     font-weight: 900px;
-    margin-top: 43px;
+    margin-top: 73px;
 }
-
 hr {
-    margin-top: 32px;;
+    margin-top: 32px;
 }
 
 #restart {
