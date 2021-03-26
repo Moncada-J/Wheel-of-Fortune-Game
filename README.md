@@ -1,4 +1,4 @@
-# Wheel of Fortune Game
+# Wheel of Fortune Game 
 <br>
 Project 1: General Assembly Software Engineering Immersive Course
 
