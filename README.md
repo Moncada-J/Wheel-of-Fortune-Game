@@ -1,14 +1,14 @@
 
 
 #### Project #1 - General Assembly Software Engineering Immersive Course 
-
+Cancel Changes
 
 # <b>Wheel of Fortune Game</b> 🎡
 <hr>
 
 ## Overview
 
-The objective of this project was to branch out and create a game that was MVP (Mode View Control) architecture, given the recommended selection of games or we were given an alternate option, to choose a similar game not on the list, whereas we were expected to present our case on how the logic would work and what the game's objectivity would be.
+The objective of this project was to branch out and create a game that was MVC (Mode View Control) architecture, given the recommended selection of games or we were given an alternate option, to choose a similar game not on the list, whereas we were expected to present our case on how the logic would work and what the game's objectivity would be.
 
 I chose the latter, which is a Wheel of Fortune. This game is one version that spins random numbers within an array of values. There are <b>many</b> different versions of this
 game. In hopes of succeeding, I went with a wheel that could change the value in a credit box. My inspiration was a casino style game where there's infinite possibilites 
